@@ -23,7 +23,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
   <meta name="keywords" content="<?php echo htmlspecialchars($siteKeywords); ?>">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/favicon.jpg" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -79,7 +79,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
         <a href="index.php" class="logo d-flex align-items-center">
-            <img src="assets/img/logo.png" alt="GTS Engineering" style="max-height: 60px;"> <!-- Logo for GTS Engineering -->
+            <img src="assets/img/logo.jpg" alt="GTS Engineering" style="max-height: 60px;"> <!-- Logo for GTS Engineering -->
             <h1 class="sitename"><?php echo htmlspecialchars($siteName); ?></h1> <span>.</span> <!-- Dynamic site name -->
         </a>
 
