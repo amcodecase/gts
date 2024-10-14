@@ -20,3 +20,6 @@ class Config
         return isset($this->settings[$key]) ? $this->settings[$key] : null;
     }
 }
+
+
+// 960 x 432
