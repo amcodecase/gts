@@ -1,5 +1,5 @@
 <?php
 // Redirect to the 'main/' directory
-header("Location: /main/");
+header("Location: main/");
 exit();
 ?>

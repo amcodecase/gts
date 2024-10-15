@@ -231,7 +231,11 @@ if (isset($_GET['section']) && $_GET['section'] === 'home') {
     <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GFCSlAbNb5QDR+gtyZrV9xJ0gYf3o5pgo28/zT09Hv/dyFZIQTQQUHY24ZQ6V2Yv" crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
 <style>
@@ -243,46 +247,6 @@ body {
     padding: 0; /* Remove default padding */
 }
 
-.navbar {
-    background-color: #e0e0e0; /* Silver color */
-    padding: 10px; /* Add padding */
-    display: flex; /* Use flexbox for alignment */
-    flex-wrap: wrap; /* Allow wrapping */
-    justify-content: space-between; /* Space items evenly */
-    align-items: center; /* Center items vertically */
-}
-
-.navbar .navbar-nav {
-    flex-direction: row; /* Keep nav items in a row */
-}
-
-.navbar .nav-item {
-    margin-right: 20px; /* Space between nav items */
-}
-
-.navbar .nav-item:last-child {
-    margin-right: 0; /* Remove right margin from the last item (Logout button) */
-}
-
-.navbar .nav-link {
-    color: black !important; /* Set link color */
-    text-decoration: none; /* Remove underline */
-}
-
-.navbar .nav-link:hover {
-    text-decoration: underline; /* Underline on hover */
-}
-
-/* Logout button styles */
-.btn-link {
-    color: black; /* Match link color */
-    text-decoration: none; /* Remove underline */
-    font-size: 1em; /* Keep font size consistent */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Reset margin */
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Center vertically */
-}
 
 /* Welcome message styles */
 .welcome-message {
@@ -361,33 +325,9 @@ button:hover {
     background-color: #f2f2f2; /* Light gray header */
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column; /* Stack items vertically */
-        align-items: flex-start; /* Align items to the left */
-        padding: 10px 0; /* Adjust padding */
-    }
-
-    .navbar .nav-item {
-        margin-right: 0; /* Remove right margin on mobile */
-        margin-bottom: 10px; /* Add bottom margin */
-    }
-
-    .container {
-        padding: 20px; /* Reduce padding on smaller screens */
-    }
-
-    button {
-        padding: 15px; /* Increase padding on buttons */
-    }
-}
+==
 
 @media (max-width: 576px) {
-    .navbar .nav-item {
-        margin-bottom: 5px; /* Less space on smaller screens */
-    }
-
     .welcome-message {
         font-size: 1.1em; /* Smaller font size for welcome message */
     }
@@ -406,41 +346,114 @@ button:hover {
         padding: 8px; /* Smaller padding for inputs */
     }
 }
+/* Navbar styles */
+.navbar {
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.navbar .nav-link {
+    color: #333; /* Dark text color */
+    font-weight: 500; /* Slightly bolder text */
+    padding: 10px 15px; /* Spacing for links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+.navbar .nav-link:hover {
+    background-color: #e2e6ea; /* Light gray background on hover */
+    color: #007bff; /* Change text color on hover */
+}
+
+.navbar .nav-item {
+    position: relative; /* To allow positioning of dropdowns, if needed */
+}
+
+.navbar-toggler {
+    border: none; /* No border for the toggler */
+}
+
+.navbar-toggler-icon {
+    background-color: #007bff; /* Custom color for toggler icon */
+}
+
+.navbar-nav {
+    flex-direction: row; /* Ensure items are in a row */
+}
+
+.navbar-nav.ml-auto {
+    margin-left: auto; /* Align logout button to the far right */
+}
+
+.btn-link {
+    color: #333; /* Match logout button text color */
+    text-decoration: none; /* No underline on button */
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .navbar-nav {
+        text-align: center; /* Center align items on small screens */
+        margin-bottom: 10px; /* Space at the bottom */
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%; /* Full width for items in small screens */
+    }
+}
+
 
 </style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Toggler button for mobile view -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    
+
+    <!-- Navbar items that collapse on smaller screens -->
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="home.php?section=home"><i class="fas fa-home"></i> Home</a>
+                <a class="nav-link" href="home.php?section=home">
+                    <i class="fas fa-home"></i> Home
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="?section=create_user"><i class="fas fa-user-plus"></i> Create User</a>
+                <a class="nav-link" href="?section=create_user">
+                    <i class="fas fa-user-plus"></i> Create User
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="?section=post_job"><i class="fas fa-briefcase"></i> Post Job</a>
+                <a class="nav-link" href="?section=post_job">
+                    <i class="fas fa-briefcase"></i> Post Job
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="?section=user_management"><i class="fas fa-users"></i> User Management</a>
+                <a class="nav-link" href="?section=user_management">
+                    <i class="fas fa-users"></i> User Management
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="?section=settings"><i class="fas fa-cog"></i> Settings</a>
+                <a class="nav-link" href="?section=settings">
+                    <i class="fas fa-cog"></i> Settings
+                </a>
             </li>
         </ul>
-        <ul class="navbar-nav">
+
+        <!-- Align the logout button to the far right -->
+        <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                <form method="post">
+                    <button type="submit" name="logout" class="nav-link btn btn-link" style="padding: 0; margin: 0;">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </button>
+                </form>
             </li>
         </ul>
     </div>
 </nav>
+
 
 
 <div class="container">
@@ -532,7 +545,9 @@ button:hover {
         <?php endif; ?>
     <?php endif; ?>
 </div>
-
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
