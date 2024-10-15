@@ -42,7 +42,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <style>
-    .notification-banner {
+    #notification-banner {
   background-color: #000; /* Green background */
   opacity: .8;
   color: white; /* White text */
@@ -52,7 +52,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
   z-index: 1000; /* Make sure it is on top */
 }
 
-.close-banner {
+#close-banner {
   background: none;
   border: none;
   color: white;
@@ -69,11 +69,10 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
 
 <body class="index-page">
 
-<div id="notification-banner" class="notification-banner">
-  <p>Welcome! We've updated our site for a better experience. Check out the new features!</p>
-  <button id="close-banner" class="close-banner">X</button>
+<div id="notification-banner" style="display: none;">
+  <p>We have updated our site! Check out the new features and improvements.</p>
+  <button id="close-banner">Close</button>
 </div>
-
 
 <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -93,7 +92,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
                     <ul>
                         <li><a href="jobs.php">Jobs</a></li>
                         <li><a href="team.php">Team</a></li>
-                        <li><a href="login.php">Login</a></li>
+                        <li><a href="users/">Login</a></li>
                     </ul>
                 </li>
                 <li><a href="contact.php">Contact</a></li>
@@ -239,7 +238,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
       <div class="card-item">
         <div class="row">
           <div class="col-xl-5">
-            <div class="card-bg"><img src="assets/img/commercial.jpeg" alt=""></div>
+            <div class="card-bg"><img src="assets/img/mikango5.jpg" alt=""></div>
           </div>
           <div class="col-xl-7 d-flex align-items-center">
             <div class="card-body">
@@ -308,7 +307,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
           </div>
           <h3>Tiling</h3>
           <p>We provide professional tiling services for both residential and commercial projects. Our skilled team ensures precise and high-quality tile installation, transforming your spaces with beautiful and durable tiling solutions.</p>
-          <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+          <a href="#" class="readmore stretched-link">Get a quote <i class="bi bi-receipt"></i></a>
         </div>
       </div><!-- End Service Item -->
 
@@ -319,7 +318,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
           </div>
           <h3>Roofing</h3>
           <p>Our roofing services cover a wide range of options, from traditional to modern roofing systems. We offer roof installation, repair, and maintenance services, providing you with reliable and long-lasting roofing solutions.</p>
-          <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+          <a href="#" class="readmore stretched-link">Get a quote <i class="bi bi-receipt"></i></a>
         </div>
       </div><!-- End Service Item -->
 
@@ -330,7 +329,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
           </div>
           <h3>Ceiling</h3>
           <p>Enhance the aesthetic appeal of your space with our ceiling services. We offer innovative and customized ceiling designs, installation, and repair to create stunning and functional ceilings that suit your style and requirements.</p>
-          <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+          <a href="#" class="readmore stretched-link">Get a quote <i class="bi bi-receipt"></i></a>
         </div>
       </div><!-- End Service Item -->
 
@@ -341,7 +340,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
           </div>
           <h3>Paving</h3>
           <p>Transform your outdoor spaces with our paving services. Our team specializes in the construction of driveways, walkways, patios, and other paved areas. We use high-quality materials and expert craftsmanship to create beautiful and durable paving solutions.</p>
-          <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+          <a href="#" class="readmore stretched-link">Get a quote <i class="bi bi-receipt"></i></a>
         </div>
       </div><!-- End Service Item -->
 
@@ -352,7 +351,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
           </div>
           <h3>Septic Tanks</h3>
           <p>We offer professional septic tank installation, maintenance, and repair services. Our team ensures proper waste management and environmental sustainability with efficient and reliable septic tank solutions for residential and commercial properties.</p>
-          <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+          <a href="#" class="readmore stretched-link">Get a quote <i class="bi bi-receipt"></i></a>
         </div>
       </div><!-- End Service Item -->
 
@@ -363,7 +362,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
           </div>
           <h3>Plastering</h3>
           <p>Transform your walls and ceilings with our expert plastering services. We provide smooth and flawless plastering finishes that enhance the visual appeal of your spaces. Our team delivers precise and high-quality plastering solutions.</p>
-          <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+          <a href="#" class="readmore stretched-link">Get a quote <i class="bi bi-receipt"></i></a>
         </div>
       </div>End Service Item -->
 
@@ -374,7 +373,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
           </div>
           <h3>Electrical</h3>
           <p>Our electrical services cover a wide range of solutions, including wiring, lighting installations, and electrical system maintenance. We prioritize safety and efficiency, ensuring reliable electrical systems for residential and commercial properties.</p>
-          <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+          <a href="#" class="readmore stretched-link">Get a quote <i class="bi bi-receipt"></i></a>
         </div>
       </div><!-- End Service Item -->
 
@@ -392,7 +391,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
 
   <div class="row justify-content-around gy-4">
     <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100">
-      <img src="assets/img/alt-services.jpeg" alt="Various Construction Services">
+      <img src="assets/img/mikango1.jpg" alt="Various Construction Services">
     </div>
 
     <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
@@ -480,7 +479,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
           </ul>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 text-center">
-          <img src="assets/img/features-1.jpg" alt="" class="img-fluid">
+          <img src="assets/img/latest4.jpeg" alt="" class="img-fluid">
         </div>
       </div>
     </div><!-- End tab content item -->
@@ -499,7 +498,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
           </ul>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 text-center">
-          <img src="assets/img/features-2.jpg" alt="" class="img-fluid">
+          <img src="assets/img/slider11.jpeg" alt="" class="img-fluid">
         </div>
       </div>
     </div><!-- End tab content item -->
@@ -518,7 +517,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
           </ul>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 text-center">
-          <img src="assets/img/features-3.jpg" alt="" class="img-fluid">
+          <img src="assets/img/slider8.jpeg" alt="" class="img-fluid">
         </div>
       </div>
     </div><!-- End tab content item -->
@@ -537,7 +536,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
           </ul>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 text-center">
-          <img src="assets/img/features-4.jpg" alt="" class="img-fluid">
+          <img src="assets/img/latest3.jpeg" alt="" class="img-fluid">
         </div>
       </div>
     </div><!-- End tab content item -->
@@ -649,19 +648,20 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
 <script src="assets/js/main.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    // Check if the user is a first-time visitor
+    // Check if the user has visited before
     if (!localStorage.getItem('visited')) {
-      // Show the notification banner
+      // Show the notification banner if this is the first visit
       document.getElementById('notification-banner').style.display = 'block';
-    }
 
-    // Close the banner when the button is clicked
-    document.getElementById('close-banner').onclick = function() {
-      document.getElementById('notification-banner').style.display = 'none';
-      localStorage.setItem('visited', 'true'); // Mark as visited
-    };
+      // Mark the user as visited when the banner is closed
+      document.getElementById('close-banner').onclick = function() {
+        document.getElementById('notification-banner').style.display = 'none';
+        localStorage.setItem('visited', 'true'); // Set "visited" flag in localStorage
+      };
+    }
   });
 </script>
+
 
 
 </body>
