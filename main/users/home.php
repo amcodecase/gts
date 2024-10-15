@@ -349,6 +349,7 @@ button:hover {
 /* Navbar styles */
 .navbar {
     background-color: #f8f9fa; /* Light background color */
+    margin-bottom: 20px;
 }
 
 .navbar .nav-link {

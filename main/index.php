@@ -85,17 +85,17 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
         <nav id="navmenu" class="navmenu">
             <ul>
                 <li><a href="index.php" class="active">Home</a></li>
-                <li><a href="about.php">About</a></li>
-                <li><a href="services.php">Services</a></li>
-                <li><a href="projects.php">Projects</a></li>
+                <li><a href="#get-started">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li class="dropdown"><a href="#"><span>Resources</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
                         <li><a href="jobs.php">Jobs</a></li>
-                        <li><a href="team.php">Team</a></li>
+                        <!-- <li><a href="team.php">Team</a></li> -->
                         <li><a href="users/">Login</a></li>
                     </ul>
                 </li>
-                <li><a href="contact.php">Contact</a></li>
+                <li><a href="#footer">Contact</a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -164,7 +164,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
       </div>
     </div>
 
-    <div class="col-lg-5" data-aos="zoom-out" data-aos-delay="200">
+    <!-- <div class="col-lg-5" data-aos="zoom-out" data-aos-delay="200">
       <form action="forms/quote.php" method="post" class="php-email-form">
         <h3>Request a Quote</h3>
         <p>Fill out the form below to receive a personalized quote for your project. We look forward to collaborating with you!</p>
@@ -196,7 +196,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
 
         </div>
       </form>
-    </div><!-- End Quote Form -->
+    </div>End Quote Form -->
 
   </div>
 
@@ -214,7 +214,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
   <p>Delivering quality and innovation in every project.</p>
 </div><!-- End Section Title -->
 
-<div class="container">
+<div class="container" id="projects">
 
   <div class="row gy-4">
 
@@ -578,25 +578,23 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
           <h4>Useful Links</h4>
           <ul>
             <li><a href="index.php">Home</a></li>
-            <li><a href="about.php">About Us</a></li>
-            <li><a href="services.php">Services</a></li>
-            <li><a href="terms.php">Terms of Service</a></li>
-            <li><a href="privacy.php">Privacy Policy</a></li>
+            <li><a href="#getting-started">About Us</a></li>
+            <li><a href="#services">Services</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="general-building.php">General Building</a></li>
-            <li><a href="plumbing.php">Plumbing</a></li>
-            <li><a href="electrical.php">Electrical</a></li>
-            <li><a href="landscaping.php">Paving (Landscaping)</a></li>
-            <li><a href="maintenance.php">Maintenance Services</a></li>
+            <li><a href="#">General Building</a></li>
+            <li><a href="#">Plumbing</a></li>
+            <li><a href="#">Electrical</a></li>
+            <li><a href="#">Paving (Landscaping)</a></li>
+            <li><a href="#">Maintenance Services</a></li>
           </ul>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
+        <!-- <div class="col-lg-2 col-md-3 footer-links">
           <h4>Customer Support</h4>
           <ul>
             <li><a href="faq.php">FAQ</a></li>
@@ -605,7 +603,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
             <li><a href="careers.php">Careers</a></li>
             <li><a href="sitemap.php">Sitemap</a></li>
           </ul>
-        </div>
+        </div> -->
 
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Connect With Us</h4>
