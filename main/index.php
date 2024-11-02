@@ -14,7 +14,6 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -102,8 +101,6 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
 
     </div>
 </header>
-
-
   <main class="main">
 
     <!-- Hero Section -->
@@ -113,7 +110,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
   <div class="container">
     <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
       <div class="col-lg-6 text-center">
-        <h2>Welcome to <?php echo htmlspecialchars($siteName); ?></h2> <!-- Dynamic site name -->
+        <h2>Welcome to <?php echo htmlspecialchars($siteName); ?></h2>
         <p>Your partner in providing top-notch engineering and construction services. We specialize in Electrical, Mechanical, Civil Engineering, and Renewable Energy Solutions.</p>
         <a href="#get-started" class="btn-get-started">Get Started</a>
       </div>
@@ -132,10 +129,10 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
     <img src="assets/img/hero-carousel/hero3.jpg" alt="">
   </div>
   <div class="carousel-item">
-    <img src="assets/img/hero-carousel/hero4.jpg" alt="">
+    <img src="assets/img/hero-carousel/hero4.jpeg" alt="">
   </div>
   <div class="carousel-item">
-    <img src="assets/img/hero-carousel/hero5.jpg" alt="">
+    <img src="assets/img/hero-carousel/hero7.jpg" alt="">
   </div>
 
   <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
@@ -147,7 +144,8 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
   </a>
 </div>
 
-</section><!-- /Hero Section -->
+</section>
+<!-- /Hero Section -->
 
 <!-- Get Started Section -->
 <section id="get-started" class="get-started section">
@@ -238,7 +236,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
       <div class="card-item">
         <div class="row">
           <div class="col-xl-5">
-            <div class="card-bg"><img src="assets/img/mikango5.jpg" alt=""></div>
+            <div class="card-bg"><img src="assets/img/alt-services.jpeg" alt=""></div>
           </div>
           <div class="col-xl-7 d-flex align-items-center">
             <div class="card-body">
@@ -307,7 +305,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
           </div>
           <h3>Tiling</h3>
           <p>We provide professional tiling services for both residential and commercial projects. Our skilled team ensures precise and high-quality tile installation, transforming your spaces with beautiful and durable tiling solutions.</p>
-          <a href="#" class="readmore stretched-link">Get a quote <i class="bi bi-receipt"></i></a>
+          <!-- <a href="#" class="readmore stretched-link">Get a quote <i class="bi bi-receipt"></i></a> -->
         </div>
       </div><!-- End Service Item -->
 
@@ -318,7 +316,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
           </div>
           <h3>Roofing</h3>
           <p>Our roofing services cover a wide range of options, from traditional to modern roofing systems. We offer roof installation, repair, and maintenance services, providing you with reliable and long-lasting roofing solutions.</p>
-          <a href="#" class="readmore stretched-link">Get a quote <i class="bi bi-receipt"></i></a>
+          <!-- <a href="#" class="readmore stretched-link">Get a quote <i class="bi bi-receipt"></i></a> -->
         </div>
       </div><!-- End Service Item -->
 
@@ -329,7 +327,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
           </div>
           <h3>Ceiling</h3>
           <p>Enhance the aesthetic appeal of your space with our ceiling services. We offer innovative and customized ceiling designs, installation, and repair to create stunning and functional ceilings that suit your style and requirements.</p>
-          <a href="#" class="readmore stretched-link">Get a quote <i class="bi bi-receipt"></i></a>
+          <!-- <a href="#" class="readmore stretched-link">Get a quote <i class="bi bi-receipt"></i></a> -->
         </div>
       </div><!-- End Service Item -->
 
@@ -340,7 +338,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
           </div>
           <h3>Paving</h3>
           <p>Transform your outdoor spaces with our paving services. Our team specializes in the construction of driveways, walkways, patios, and other paved areas. We use high-quality materials and expert craftsmanship to create beautiful and durable paving solutions.</p>
-          <a href="#" class="readmore stretched-link">Get a quote <i class="bi bi-receipt"></i></a>
+          <!-- <a href="#" class="readmore stretched-link">Get a quote <i class="bi bi-receipt"></i></a> -->
         </div>
       </div><!-- End Service Item -->
 
@@ -351,7 +349,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
           </div>
           <h3>Septic Tanks</h3>
           <p>We offer professional septic tank installation, maintenance, and repair services. Our team ensures proper waste management and environmental sustainability with efficient and reliable septic tank solutions for residential and commercial properties.</p>
-          <a href="#" class="readmore stretched-link">Get a quote <i class="bi bi-receipt"></i></a>
+          <!-- <a href="#" class="readmore stretched-link">Get a quote <i class="bi bi-receipt"></i></a> -->
         </div>
       </div><!-- End Service Item -->
 
@@ -373,7 +371,7 @@ $siteKeywords = $config->get('SITE_KEYWORDS');
           </div>
           <h3>Electrical</h3>
           <p>Our electrical services cover a wide range of solutions, including wiring, lighting installations, and electrical system maintenance. We prioritize safety and efficiency, ensuring reliable electrical systems for residential and commercial properties.</p>
-          <a href="#" class="readmore stretched-link">Get a quote <i class="bi bi-receipt"></i></a>
+          <!-- <a href="#" class="readmore stretched-link">Get a quote <i class="bi bi-receipt"></i></a> -->
         </div>
       </div><!-- End Service Item -->
 
